@@ -1,0 +1,5 @@
+foos roh dah
+test gpg #2
+test GPG #3 - added employer key - OK with command line.
+test GPG #4 - test with VSC
+test GPG #5 - test with personal for gravatar
