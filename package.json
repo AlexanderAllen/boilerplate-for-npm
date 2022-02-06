@@ -1,14 +1,24 @@
 {
   "name": "boilerplate-for-npm",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Boilerplate for new NPM packages.",
+  "author": "Alexander Allen",
+  "license": "Unlicense",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderAllen/boilerplate-for-npm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexanderAllen/boilerplate-for-npm/issues"
+  },
+  "homepage": "https://github.com/AlexanderAllen/boilerplate-for-npm#readme",
   "keywords": [
-    "npm"
-  ],
-  "author": "AlexanderAllen",
-  "license": "ISC"
+    "npm",
+    "node",
+    "javascript"
+  ]
 }

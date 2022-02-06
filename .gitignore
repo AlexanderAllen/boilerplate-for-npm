@@ -50,6 +50,9 @@ typings/
 # Optional npm cache directory
 .npm
 
+# NPM publishing directory.
+lib/
+
 # Optional eslint cache
 .eslintcache
 
