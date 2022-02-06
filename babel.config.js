@@ -2,7 +2,8 @@ module.exports = {
   presets: [
     [
       '@babel/preset-env',
-      { targets: { node: 'current' } },
+      // Leave the target to ES2015.
+      // { targets: { node: 'current' } },
     ],
     '@babel/preset-typescript',
   ],
