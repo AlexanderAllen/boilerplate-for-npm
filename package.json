@@ -7,7 +7,7 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint ./src",
-    "test": "jest --verbose --notify ./tests",
+    "test": "jest --verbose ./tests",
     "build": "babel src -d lib"
   },
   "repository": {
