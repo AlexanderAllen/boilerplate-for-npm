@@ -32,6 +32,7 @@ module.exports = {
     },
     // Override enviornment for test files.
     {
+      extends: ['plugin:jest/recommended'],
       files: [
         '**/*.spec.js',
         '**/*.spec.jsx',
