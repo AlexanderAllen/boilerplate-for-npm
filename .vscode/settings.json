@@ -1,0 +1,5 @@
+{
+  "eslint.onIgnoredFiles": "warn",
+  "eslint.useESLintClass": true,
+  "eslint.lintTask.options": ". --ext .js,.jsx,.ts,.tsx"
+}
