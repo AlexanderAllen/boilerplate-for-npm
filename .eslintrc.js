@@ -5,6 +5,20 @@
 
 module.exports = {
   root: true,
+  // https://eslint.org/docs/user-guide/configuring/language-options
+  env: {
+    browser: true,
+    es6: true,
+    // https://stackoverflow.com/questions/48584556/eslint-chrome-is-not-defined-no-undef
+    // webextensions: true,
+  },
+  plugins: ['react'],
+  parser: ['@babel/eslint-parser'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   extends: [
     'eslint:recommended',
     'airbnb',
@@ -20,6 +34,11 @@ module.exports = {
       files: '**/*.+(ts|tsx)',
       parser: '@typescript-eslint/parser',
       parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+        ecmaVersion: 2021,
+        sourceType: 'module',
         project: './tsconfig.json',
       },
       plugins: ['@typescript-eslint/eslint-plugin'],
@@ -32,7 +51,7 @@ module.exports = {
     },
     // Override enviornment for test files.
     {
-      extends: ['plugin:jest/recommended'],
+      extends: ['plugin:jest/recommended', 'plugin:jest/style'],
       files: [
         '**/*.spec.js',
         '**/*.spec.jsx',
