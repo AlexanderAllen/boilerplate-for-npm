@@ -7,7 +7,7 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint ./src",
-    "test": "jest --verbose ./tests",
+    "test": "jest --coverage ./tests",
     "build": "babel src -d lib"
   },
   "repository": {
@@ -37,6 +37,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "jest": "^27.5.0"
+    "jest": "^27.5.0",
+    "ts-node": "^10.4.0"
   }
 }
