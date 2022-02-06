@@ -3,7 +3,7 @@
 console.log('hello world!');
 
 function helloWorld(name) {
-    return `Hello, ${name} world!`;
+  return `Hello, ${name} world!`;
 }
 
 const message = helloWorld('Alexander');
