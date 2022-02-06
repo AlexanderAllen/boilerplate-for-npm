@@ -13,6 +13,7 @@ module.exports = {
   ignorePatterns: [
     'node_modules',
     'dist',
+    'lib',
   ],
   overrides: [
     {
@@ -25,6 +26,7 @@ module.exports = {
       extends: [
         'plugin:@typescript-eslint/eslint-recommended', // removes redundant warnings between TS & ESLint
         'plugin:@typescript-eslint/recommended', // rules specific to typescript, e.g., writing interfaces
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
         'airbnb-typescript',
       ],
     },
@@ -38,6 +40,16 @@ module.exports = {
       ],
       env: {
         jest: true,
+        // 'jest/globals': true,
+      },
+      // https://www.npmjs.com/package/eslint-plugin-jest
+      plugins: ['jest'],
+      rules: {
+        'jest/no-disabled-tests': 'warn',
+        'jest/no-focused-tests': 'error',
+        'jest/no-identical-title': 'error',
+        'jest/prefer-to-have-length': 'warn',
+        'jest/valid-expect': 'error',
       },
     },
   ],
